@@ -9,6 +9,7 @@
    ```sh 
    # Create tomcat directory
    cd /opt
+   # DO NOT use below link. Instead got ot the URL above, find the tar.gz file and copy link
    wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
    tar -xvzf /opt/apache-tomcat-<version>.tar.gz
    ```
