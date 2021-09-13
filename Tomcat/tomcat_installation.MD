@@ -76,6 +76,7 @@ At the time of writing this lecture below 2 files are updated. Comment out these
 1. Update users information in the tomcat-users.xml file
 goto tomcat home directory and Add below users to conf/tomcat-users.xml file
    ```sh
+   vi /opt/apache-tomcat-8.5.70/conf/tomcat-users.xml
 	<role rolename="manager-gui"/>
 	<role rolename="manager-script"/>
 	<role rolename="manager-jmx"/>
