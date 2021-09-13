@@ -11,15 +11,14 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 ## Install Java
 1. We will be using open java for our demo, Get the latest version from http://openjdk.java.net/install/
    ```sh
-   yum install java-1.8*
-   #yum -y install java-1.8.0-openjdk-devel
+   yum install java-1.11*
    ```
 
 1. Confirm Java Version and set the java home
    ```sh
    java -version
-   find /usr/lib/jvm/java-1.8* | head -n 3
-   JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-<Java version which seen in the above output>
+   find /usr/lib/jvm/java-11* | head -n 3
+   JAVA_HOME=/usr/lib/jvm/java-11-<Java version which seen in the above output>
    export JAVA_HOME
    PATH=$PATH:$JAVA_HOME
     # To set it permanently update your .bash_profile
@@ -28,7 +27,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    _The output should be something like this,_
     ```sh
    [root@~]# java -version
-   openjdk version "1.8.0_151"
+   openjdk version "11.0_151"
    OpenJDK Runtime Environment (build 1.8.0_151-b12)
    OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
    ```
@@ -42,7 +41,6 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
    sudo sudo amazon-linux-extras install epel
    yum install epel-release    # For other Linux versions
-   sudo yum install java-11-openjdk-devel
    sudo yum -y install jenkins
    ```
 
