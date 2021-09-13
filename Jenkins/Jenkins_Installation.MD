@@ -28,7 +28,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
     ```sh
    [root@~]# java -version
    openjdk version "11.0_151"
-   OpenJDK Runtime Environment (build 1.8.0_151-b12)
+   OpenJDK Runtime Environment (build 11.0_151-b12)
    OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
    ```
 
