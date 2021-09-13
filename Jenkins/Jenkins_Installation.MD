@@ -67,6 +67,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    - `Admin` > `Configure` > `Password`
 - Configure `java` path
   - `Manage Jenkins` > `Global Tool Configuration` > `JDK`  
+  - Name = JAVA_HOME JAVA_HOME = [Output of JAVA_HOME configured earlier]
 - Create another admin user id
 
 ### Test Jenkins Jobs
