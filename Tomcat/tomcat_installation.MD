@@ -59,10 +59,15 @@ Access tomcat application from browser on port 8090
    ```
 1. above command gives 3 context.xml files. comment (<!-- & -->) `Value ClassName` field on files which are under webapp directory. 
 After that restart tomcat services to effect these changes. 
-At the time of writing this lecture below 2 files are updated. 
+At the time of writing this lecture below 2 files are updated. Comment out these lines with <!-- and -->
    ```sh 
-   /opt/tomcat/webapps/host-manager/META-INF/context.xml
-   /opt/tomcat/webapps/manager/META-INF/context.xml
+   vi /opt/tomcat/webapps/host-manager/META-INF/context.xml
+   <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+	 
+   vi /opt/tomcat/webapps/manager/META-INF/context.xml
+   <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
    
    # Restart tomcat services
    tomcatdown  
