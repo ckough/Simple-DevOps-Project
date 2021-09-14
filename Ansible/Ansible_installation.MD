@@ -26,7 +26,7 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    useradd ansadmin
    passwd ansadmin
    ```
-1. Below command grant sudo access to ansadmin user. But we strongly recommended using "visudo" command if you are aware vi or nano editor.  (on Control node and Managed host)
+1. Below command grant sudo access to ansadmin user. But we strongly recommended using "visudo" command if you are aware vi or nano editor on BOTH Control node and Managed host
    ```sh
    visudo
    ansadmin ALL=(ALL)       NOPASSWD: ALL
@@ -34,12 +34,12 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
    ```
    
-1. Log in as a ansadmin user on master and generate ssh key (on Control node)
+1. Log in as a ansadmin user on master and generate ssh key (on Ansible node)
    ```sh 
    sudo su - ansadmin
    ssh-keygen
    ```
-1. Copy keys onto all ansible managed hosts (on Control node)
+1. Copy keys onto all ansible managed hosts (on Ansible node)
    ```sh 
    ssh-copy-id ansadmin@<target-server>
    ```
