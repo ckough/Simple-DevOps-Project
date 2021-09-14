@@ -56,7 +56,7 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    usermod -aG docker ansadmin
 
    ```
-1. Enable password login from /etc/ssh/sshd_config file
+1. Enable password login from /etc/ssh/sshd_config file on BOTH Control node and Managed host
    ```sh
    vi /etc/ssh/sshd_config
    PasswordAuthentication yes
