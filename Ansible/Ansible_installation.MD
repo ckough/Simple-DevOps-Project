@@ -28,6 +28,9 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    ```
 1. Below command grant sudo access to ansadmin user. But we strongly recommended using "visudo" command if you are aware vi or nano editor.  (on Control node and Managed host)
    ```sh
+   visudo
+   ansadmin ALL=(ALL)       NOPASSWD: ALL
+   OR
    echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
    ```
    
