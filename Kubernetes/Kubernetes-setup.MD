@@ -74,6 +74,13 @@
    kops edit ig --name=<cluster_name> master-<zone_name>
    #kops edit ig --name=demo.k8s.valaxy.net master-ap-south-1b
    ```
+1. For addiional commands:
+   ```sh
+   Suggestions:
+   * validate cluster: kops validate cluster --wait 10m
+   * list nodes: kubectl get nodes --show-labels
+   * ssh to the master: ssh -i ~/.ssh/id_rsa ubuntu@api.demo.k8s.hailthebot.xyz
+   ```
 1. to Delete cluster (try once your lab is done)
    ```sh 
    kops delete cluster <cluster_name> --yes
