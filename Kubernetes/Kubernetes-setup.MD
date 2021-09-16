@@ -94,7 +94,10 @@
    ```sh
    kubectl get nodes
    ```
-
+1. To login to Kube master:
+   ```sh
+   ssh -i ~/.ssh/id_rsa ubuntu@api.demo.k8s.hailthebot.xyz
+   ```
 
    
 #### Deploying Nginx pods on Kubernetes
