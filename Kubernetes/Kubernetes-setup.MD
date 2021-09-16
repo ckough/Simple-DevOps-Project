@@ -29,7 +29,7 @@
     # curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
 
     ```
-1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access
+1. Create an IAM user/role  with Route53, EC2, IAM, SQS, Cloudwatch Events and S3 full access
 
 1. Attach IAM role to ubuntu instance
    ```sh
